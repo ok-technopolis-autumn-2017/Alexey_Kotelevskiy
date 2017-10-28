@@ -7,54 +7,47 @@
 <body>
 <div class="container">
     <h1 class="head-title">TODOS</h1>
-    <div class="find-record">
-        <div class="select-all-icon"></div>
-        <input type="text" class="find-record-input" placeholder="What needs to be done?" name="q">
+    <div class="todos-add-record">
+        <button class="todos-add-record_select-all" aria-label="Отметить все как выполненные"></button>
+        <input type="text" class="todos-add-record_input" placeholder="What needs to be done?" name="q"
+               aria-label="Поле добавления todo">
     </div>
-    <div class="list">
-        <div class="list-elem-container">
-
-                <input type="checkbox" class="list-elem-check" name="HTML"> <!--Обычный чекбокс, его мы скроем -->
-                <div class="list-elem-check-custom"></div><!--Кастомный  чекбокс -->
-                <input class="list-elem-check-custom-label" value="HTML">
-                 <button class="list-elem-delete-icon">X</button>
+    <div class="todos-list">
+        <div class="todos-list_elem-container">
+            <input type="checkbox" class="todos-list-elem_check" aria-label="пометить как выполненное">
+            <input class="todos-list-elem_text" aria-label="Текст todo" value="HTML">
+            <button class="todos-list-elem_delete" aria-label="Удалить todo">Удалить</button>
         </div>
 
 
-        <div class="list-elem-container">
-
-                <input type="checkbox" class="list-elem-check" name="CSS" checked> <!--Обычный чекбокс, его мы скроем -->
-                <div class="list-elem-check-custom"></div><!--Кастомный  чекбокс -->
-                <input class="list-elem-check-custom-label" value="CSS">
-            <button class="list-elem-delete-icon">X</button>
+        <div class="todos-list_elem-container __ready">
+            <input type="checkbox" class="todos-list-elem_check" checked aria-label="пометить как невыполненное">
+            <input class="todos-list-elem_text" aria-label="Текст todo" value="CSS">
+            <button class="todos-list-elem_delete" aria-label="Удалить todo">Удалить</button>
         </div>
 
-        <div class="list-elem-container">
-
-                <input type="checkbox" class="list-elem-check" name="JS"> <!--Обычный чекбокс, его мы скроем -->
-                <div class="list-elem-check-custom"></div><!--Кастомный  чекбокс -->
-                <input class="list-elem-check-custom-label" value="JS">
-                <button class="list-elem-delete-icon">X</button>
+        <div class="todos-list_elem-container">
+            <input type="checkbox" class="todos-list-elem_check" aria-label="пометить как выполненное">
+            <input class="todos-list-elem_text" aria-label="Текст todo" value="JS">
+            <button class="todos-list-elem_delete" aria-label="Удалить todo">Удалить</button>
         </div>
 
-        <div class="list-elem-container">
-
-                <input type="checkbox" class="list-elem-check" name="JS tool"> <!--Обычный чекбокс, его мы скроем -->
-                <div class="list-elem-check-custom"></div><!--Кастомный  чекбокс -->
-                <input class="list-elem-check-custom-label" value="JS tool">
-                <button class="list-elem-delete-icon">X</button>
+        <div class="todos-list_elem-container">
+            <input type="checkbox" class="todos-list-elem_check" aria-label="пометить как выполненное">
+            <input class="todos-list-elem_text" aria-label="Текст todo" value="JS Tool">
+            <button class="todos-list-elem_delete" aria-label="Удалить todo">Удалить</button>
         </div>
 
     </div>
-<div class="footer">
-    <span class="footer-items-count">3 items left</span>
-    <span class="footer-filter">
-        <button class="footer-filter-button is-active">All</button>
-        <button class="footer-filter-button">Active</button>
-        <button class="footer-filter-button">Completed</button>
+    <div class="action-bar">
+        <span class="action-bar_items-count" aria-label="Количество не сделанных">3 items left</span>
+        <span class="action-bar_filter">
+        <button class="action-bar-filter_button __active" aria-label="Фильтр все">All</button>
+        <button class="action-bar-filter_button" aria-label="Фильтр активные">Active</button>
+        <button class="action-bar-filter_button" aria-label="Фильтр завершенные">Completed</button>
     </span>
-    <button class="footer-clear-button">Clear completed</button>
-</div>
+        <button class="action-bar_clear-button" aria-label="Удалить завершенные">Clear completed</button>
+    </div>
 </div>
 
 </body>
