@@ -20,6 +20,7 @@
 
     position: relative;
     outline: none;
+    cursor: pointer;
 }
 /*.todos-add_select-all:focus {*/
 /*background: #f9f9f9;*/
