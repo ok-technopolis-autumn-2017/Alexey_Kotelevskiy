@@ -54,7 +54,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            border: 2px solid #e7e7e7;
+            border: 1px solid #e7e7e7;
             border-radius: 50px;
             background: none;
             z-index: 1000;
@@ -65,9 +65,19 @@
             background-position: center;
             border: 1px solid #76cbbb;
         }
+.todos-list-elem_text.__ready
+{
+    color: #e7e7e7;
+}
 
+.__ready .todos-list-elem_text
+{
+    color: #e7e7e7;
+    text-decoration: line-through;
+}
     .todos-list-elem_text
     {
+        text-decoration: none;
         resize: none;
         border: none;
         width: 100%;
@@ -78,7 +88,6 @@
         height: 32px;
         vertical-align: middle;
         padding-top: 8px;
-
     }
     .todos-list-elem_delete{
         display: none;
