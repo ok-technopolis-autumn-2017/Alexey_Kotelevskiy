@@ -29,8 +29,6 @@
     {
         width: 36px;
         height: 36px;
-        border: 2px solid #e7e7e7;
-        border-radius: 50px;
         position: relative;
         display: inline-block;
         float: left;
@@ -50,6 +48,22 @@
             height: 100%;
             overflow: hidden;
             z-index: 10;
+        }
+        .todos-list-elem_check-indicator
+        {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #e7e7e7;
+            border-radius: 50px;
+            background: none;
+            z-index: 1000;
+
+        }
+        .todos-list-elem_check:checked + .todos-list-elem_check-indicator{
+            background: url('../../img/icons/completed.png') no-repeat;
+            background-position: center;
+            border: 1px solid #76cbbb;
         }
 
     .todos-list-elem_text
@@ -72,4 +86,5 @@
         outline:none;
 
      }
+
 

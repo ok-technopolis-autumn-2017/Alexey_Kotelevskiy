@@ -19,7 +19,7 @@
     float: left;
 
     position: relative;
-    /*outline: none;*/
+    outline: none;
 }
 /*.todos-add_select-all:focus {*/
 /*background: #f9f9f9;*/
