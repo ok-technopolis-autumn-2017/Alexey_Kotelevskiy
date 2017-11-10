@@ -1,0 +1,88 @@
+.todos-list_elem-container
+    position: relative
+    padding: 0 $offset_3x 0 $offset_3x
+    border-bottom: 1px solid $border_color
+    display: flex
+    align-items: center
+    justify-content: start
+
+    .todos-list-elem_delete
+        display: none
+        cursor: pointer
+        outline: none
+
+    &:nth-child(1)
+        border-top: 1px solid $border_color
+
+    &:hover
+        background-color: $background_hover_element_color
+
+        .todos-list_elem-checkbox
+            border-color: $border_color
+
+        .todos-list-elem_delete
+            position: absolute
+            display: block
+            width: $todos-list-elem_delete-size
+            height: $todos-list-elem_delete-size
+            bottom: $offset_4x
+            right: $offset_3x
+            border: none
+            background: url('../../../images/icons/close.png') no-repeat
+
+    .todos-list_elem-checkbox
+        width: $todos-list_elem-checkbox-size
+        height: $todos-list_elem-checkbox-size
+        float: left
+        margin-right: $offset_4x
+        position: relative
+
+        .todos-list-elem_check
+            opacity: 0
+            position: absolute
+            width: 100%
+            height: 100%
+            overflow: hidden
+            cursor: pointer
+            z-index: 1
+
+            &:checked + .todos-list-elem-checkbox_visual
+                background: url('../../../images/icons/completed.png') no-repeat
+                background-position: center
+                border: 1px solid $ready_border_color
+                border-radius: 50px
+
+        .todos-list-elem-checkbox_visual
+            position: absolute
+            width: 100%
+            height: 100%
+            background: none
+            border: 1px solid $border_color
+            border-radius: 50px
+
+
+    .todos-list-elem_text-container
+        overflow: hidden
+        padding-right: $offset_7x
+        flex-grow: 100
+
+        .todos-list-elem_text
+            text-decoration: none
+            resize: none
+            border: none
+            width: 100%
+            font-size: $todos-list-elem_text-font-size
+            color: $not_ready_text_color
+            outline: none
+            background: none
+            height: $todos-list_elem-checkbox-size
+            vertical-align: middle
+            padding-top: $offset_5x
+
+.todos-list_elem-container.__ready
+        .todos-list-elem_text
+            color: $ready_text_color
+            text-decoration: line-through
+
+
+

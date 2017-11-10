@@ -6,8 +6,8 @@
         clear: both
 
     .todos-add-record_select-all
-        width: 64px
-        height: 64px
+        width: $todos-add-record_select-all-size
+        height: $todos-add-record_select-all-size
         background: none
         border: none
         padding: 0
@@ -19,13 +19,13 @@
 
 
         .todos-add_select-all_icon
-            width: 24px
-            height: 12px
-            background: url('../img/icons/select-all.png') no-repeat 0 0
+            width: $todos-add_select-all_icon-width
+            height: $todos-add_select-all_icon-height
+            background: url('../../../images/icons/select-all.png') no-repeat 0 0
             position: absolute
             left: 50%
             top: 50%
-            margin: -6px -12px
+            margin: (-$offset - 2px) (-$offset_3x)
 
     .todos-add_new-item-w
         overflow: hidden
@@ -35,14 +35,14 @@
             box-sizing: border-box
             border: 0
             background: none
-            color: #666
-            font-size: 24px
+            color: $not_ready_text_color
+            font-size: $todos-add-record_input-font-size
             line-height: 30px
             font-weight: 200
-            padding-right: 12px
-            margin-top: 14px
+            padding-right: $offset_3x
+            margin-top: ($offset_3x + 2px)
             outline: none
 
             &::placeholder
-                color: #ccc
+                color: $ready_text_color
                 font-style: italic
