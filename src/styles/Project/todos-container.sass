@@ -1,6 +1,9 @@
+@import "../config/globals"
+
+$common_todos_container: 0 2px 4px rgba(0, 0, 0, .2)
 .container
     background: $background_container_color
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .2)
+    box-shadow: $common_todos_container
     position: relative
     padding-left: 0
     padding-right: 0
@@ -10,7 +13,7 @@
         position: absolute
         top: 100%
         background: $background_container_color
-        box-shadow: 0 2px 4px rgba(0, 0, 0, .2)
+        box-shadow: $common_todos_container
         z-index: -1
 
     &:before
