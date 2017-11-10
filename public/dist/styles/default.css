@@ -316,7 +316,6 @@ body {
 }
 
 .todos-list_elem-container .todos-list-elem_text-container {
-  overflow: hidden;
   padding-right: 28px;
   flex-grow: 100;
 }
@@ -333,6 +332,7 @@ body {
   height: 36px;
   vertical-align: middle;
   padding-top: 20px;
+  overflow: hidden;
 }
 
 .todos-list_elem-container.__ready .todos-list-elem_text {
