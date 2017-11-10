@@ -198,6 +198,11 @@ body {
   font-style: italic;
 }
 
+.todos-add-record .todos-add_new-item-w .todos-add-record_input:-ms-input-placeholder {
+  color: #ccc !important;
+  font-style: italic;
+}
+
 .todos-action-bar {
   font-size: 10px;
   padding-top: 8px;
