@@ -7,6 +7,10 @@
     display: flex
     align-items: center
     justify-content: start
+    &.__ready
+        .todos-list-elem_text
+            color: $ready_text_color
+            text-decoration: line-through
 
     .todos-list-elem_delete
         display: none
@@ -22,13 +26,11 @@
         .todos-list_elem-checkbox
             border-color: $border_color
 
-        .todos-list-elem_delete
-            position: absolute
-            display: block
+
+        .todos-list-elem_close-container
+            align-self: flex-end
             width: $todos-list-elem_delete-size
             height: $todos-list-elem_delete-size
-            bottom: $offset_4x
-            right: $offset_3x
             border: none
             background: url('../../../images/icons/close.png') no-repeat
 
@@ -81,11 +83,6 @@
             vertical-align: middle
             padding-top: $offset_5x
             overflow: hidden
-
-.todos-list_elem-container.__ready
-        .todos-list-elem_text
-            color: $ready_text_color
-            text-decoration: line-through
 
 
 
