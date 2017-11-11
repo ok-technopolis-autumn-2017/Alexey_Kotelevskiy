@@ -7,6 +7,10 @@
     display: flex
     align-items: center
     justify-content: start
+    &.__ready
+        .todos-list-elem_text
+            color: $ready_text_color
+            text-decoration: line-through
 
     .todos-list-elem_delete
         display: none
@@ -81,11 +85,6 @@
             vertical-align: middle
             padding-top: $offset_5x
             overflow: hidden
-
-.todos-list_elem-container.__ready
-        .todos-list-elem_text
-            color: $ready_text_color
-            text-decoration: line-through
 
 
 
