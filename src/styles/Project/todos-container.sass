@@ -25,3 +25,14 @@ $common_todos_container: 0 2px 4px rgba(0, 0, 0, .2)
         height: 5px
         left: 2px
         right: 2px
+
+    &.__empty
+        .todos-list
+            display: none
+        .todos-action-bar
+            display: none
+        &:before, &:after
+            display: none
+        .todos-add-record_select-all
+            visibility: hidden
+            pointer-events: none
