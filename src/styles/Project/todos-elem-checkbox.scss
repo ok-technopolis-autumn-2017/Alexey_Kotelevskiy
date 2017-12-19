@@ -1,0 +1,57 @@
+.todos-list_elem-checkbox {
+  width: $todos-list_elem-checkbox-size;
+  height: $todos-list_elem-checkbox-size;
+  float: left;
+  margin-right: $offset_4x;
+  position: relative;
+}
+
+  .todos-list-elem_check {
+    opacity: 0;
+    position: absolute;
+    width: 105%;
+    height: 105%;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    margin: 0;
+
+  }
+
+  .todos-list-elem_check:checked + .todos-list-elem-checkbox_visual {
+    background: url('../../../images/icons/completed.png') no-repeat;
+    background-position: center;
+    border: 1px solid $ready_border_color;
+    border-radius: 50px;
+  }
+
+
+  .todos-list-elem-checkbox_visual {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: 1px solid $border_color;
+    border-radius: 50px;
+    transition : border 300ms ease-out;
+  }
+
+  .todos-list-elem_text-container {
+    padding-right: $offset_7x;
+    flex-grow: 100;
+  }
+
+    .todos-list-elem_text {
+      text-decoration: none;
+      resize: none;
+      border: none;
+      width: 100%;
+      font-size: $todos-list-elem_text-font-size;
+      color: $not_ready_text_color;
+      outline: none;
+      background: none;
+      height: $todos-list_elem-checkbox-size;
+      vertical-align: middle;
+      padding-top: $offset_5x;
+      overflow: hidden;
+    }

@@ -1,0 +1,58 @@
+@import "../config/globals";
+
+
+
+.todos-add-record:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+    .todos-add-record_select-all {
+        width: $todos-add-record_select-all-size;
+        height: $todos-add-record_select-all-size;
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        float: left;
+        position: relative;
+        outline: none;
+        cursor: pointer;
+    }
+
+        .todos-add_select-all_icon {
+            width: $todos-add_select-all_icon-width;
+            height: $todos-add_select-all_icon-height;
+            background: url('../../../images/icons/select-all.png') no-repeat 0 0;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin: (-$offset - 2px) (-$offset_3x);
+        }
+    .todos-add_new-item-w {
+        overflow: hidden;
+    }
+
+        .todos-add-record_input {
+            width: 100%;
+            box-sizing: border-box;
+            border: 0;
+            background: none;
+            color: $not_ready_text_color;
+            font-size: $todos-add-record_input-font-size;
+            line-height: 30px;
+            font-weight: 200;
+            padding-right: $offset_3x;
+            margin-top: ($offset_3x + 2px);
+            outline: none;
+
+                ::placeholder {
+                    color: $ready_text_color;
+                    font-style: italic;
+                }
+                :-ms-input-placeholder {
+                    color: $ready_text_color !important;
+                    font-style: italic;
+                }
+        }

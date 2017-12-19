@@ -1,0 +1,24 @@
+@import "../config/globals";
+
+body,
+input,
+button,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: $base-font-size;
+}
+body {
+    background: $background_body_color;
+}
+.container {
+    min-width: 280px;
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 0 $offset_5x;
+}

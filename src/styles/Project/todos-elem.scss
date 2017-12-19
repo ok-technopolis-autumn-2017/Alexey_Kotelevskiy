@@ -1,0 +1,52 @@
+@import "../config/globals";
+
+.todos-list_elem-container {
+    position: relative;
+    padding: 0 $offset_3x 0 $offset_3x;
+    border-bottom: 1px solid $border_color;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.todos-list_elem-container.__ready
+{
+    .todos-list-elem_text {
+        color: $ready_text_color;
+        text-decoration: line-through;
+    }
+}
+
+
+    .todos-list-elem_delete {
+        display: none;
+        cursor: pointer;
+        outline: none;
+
+    }
+.todos-list-elem_delete:nth-child(1) {
+    border-top: 1px solid $border_color;
+}
+
+.todos-list-elem_delete:hover {
+    background-color: $background_hover_element_color;
+    .todos-list_elem-checkbox {
+        border-color: $border_color;
+    }
+    .todos-list-elem_delete {
+        position: absolute;
+        display: block;
+        width: $todos-list-elem_delete-size;
+        height: $todos-list-elem_delete-size;
+        bottom: $offset_4x;
+        right: $offset_3x;
+        border: none;
+        background: url('../../../images/icons/close.png') no-repeat;
+    }
+}
+
+
+
+
+
+
