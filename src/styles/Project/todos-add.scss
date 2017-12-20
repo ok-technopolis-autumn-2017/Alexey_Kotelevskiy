@@ -51,11 +51,11 @@
             margin-top: ($offset_3x + 2px);
             outline: none;
 
-                ::placeholder {
+                &::placeholder {
                     color: $ready_text_color;
                     font-style: italic;
                 }
-                :-ms-input-placeholder {
+                &:-ms-input-placeholder {
                     color: $ready_text_color !important;
                     font-style: italic;
                 }

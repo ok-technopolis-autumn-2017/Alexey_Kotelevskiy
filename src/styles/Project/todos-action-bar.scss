@@ -27,11 +27,11 @@
         text-align: center;
     }
 
-.todos-action-bar_filter button {
+.todos-action-bar_filter .todos-action-bar-filter_button {
     padding: $offset ($offset_2x + 2px) $offset ($offset_2x + 2px);
     text-align: center;
 }
-.todos-action-bar_filter button.__active {
+.todos-action-bar_filter .todos-action-bar-filter_button.__active {
     border-radius: 4px;
     border: 1px solid $border_color;
 }
