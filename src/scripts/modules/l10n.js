@@ -24,7 +24,7 @@ var pluralAlgorithms = {
 };
 
 var l10n = {
-    language: 'ru',
+    language: 'en',
     _dictionaries: {},
 
     /**

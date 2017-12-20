@@ -12,7 +12,7 @@ function init() {
     var rusDictionary = {
         'todosCountLabel': ['task', 'tasks', 'tasks']
     };
-    l10n.provideDict('ru', rusDictionary);
+    l10n.provideDict('en', rusDictionary);
 
     var todoMain = new TodoMain();
     var addTodos = new AddTodos();
