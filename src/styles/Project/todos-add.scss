@@ -1,6 +1,10 @@
 @import "../config/globals";
 
 
+.todos-add-record{
+    border-bottom: 1px solid $border_color;
+    padding-bottom: 1px;
+}
 
 .todos-add-record:after {
     content: '';
