@@ -81,7 +81,6 @@ todoItemConstructorPrototype.handleEvent = function (e) {
             this.resizeText(this._text.value);
             this.setText(this._text.value);
             break;
-
     }
 };
 
@@ -112,8 +111,9 @@ todoItemConstructorPrototype.resizeText = function (text) {
  * @return {TodoItemConstructor}
  */
 todoItemConstructorPrototype.setText = function (text) {
+
     if (this.model.text !== text) {
-        this._text.innerHTML = text;
+        this._text.value = text;
         this.model.text = text;
         this.trigger('change', this.model);
     }
