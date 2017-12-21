@@ -50,3 +50,25 @@
 
 }
 
+
+.todos-list-elem_text-container {
+    padding-right: $offset_7x;
+    padding-top: $offset_4x;
+    flex-grow: 100;
+}
+
+.todos-list-elem_text {
+    text-decoration: none;
+    resize: none;
+    border: none;
+    width: 100%;
+    font-size: $todos-list-elem_text-font-size;
+    color: $not_ready_text_color;
+    outline: none;
+    background: none;
+    height: $todos-list_elem-checkbox-size;
+    vertical-align: middle;
+    overflow: hidden;
+    padding-top: 0;
+}
+

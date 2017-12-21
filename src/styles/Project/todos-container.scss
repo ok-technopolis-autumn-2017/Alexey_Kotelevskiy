@@ -7,6 +7,7 @@ $common_todos_container: 0 2px 4px rgba(0, 0, 0, .2);
     position: relative;
     padding-left: 0;
     padding-right: 0;
+
     &:before, &:after {
         content: '';
         position: absolute;

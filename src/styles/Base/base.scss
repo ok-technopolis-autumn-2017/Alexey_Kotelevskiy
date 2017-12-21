@@ -22,3 +22,15 @@ body {
     margin: 0 auto;
     padding: 0 $offset_5x;
 }
+
+.hidden-container
+{
+    right: -1000px;
+    font-size: $todos-list-elem_text-font-size;
+    padding: $offset_5x $offset_half $offset_half  $offset_half;
+    text-decoration: none;
+    position: absolute;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+
+}
