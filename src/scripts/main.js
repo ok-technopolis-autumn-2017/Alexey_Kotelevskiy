@@ -9,10 +9,10 @@ var TodoList = require('./components/TodoList');
 var TodoActionsBar = require('./components/TodoActionsBar');
 
 function init() {
-    var rusDictionary = {
-        'todosCountLabel': ['task', 'tasks', 'tasks']
+    var enDictionary = {
+        'todosCountLabel': ['task', 'tasks']
     };
-    l10n.provideDict('en', rusDictionary);
+    l10n.provideDict('en', enDictionary);
 
     var todoMain = new TodoMain();
     var addTodos = new AddTodos();
