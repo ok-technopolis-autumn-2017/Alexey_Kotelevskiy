@@ -40,7 +40,5 @@ body {
     color: inherit;
     height: $offset_5x;
     cursor: pointer;
-    background: none;
-    border: none;
-    outline: none;
+    @include clear-button;
 }
