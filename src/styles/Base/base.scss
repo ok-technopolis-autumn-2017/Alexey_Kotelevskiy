@@ -1,0 +1,44 @@
+@import "../config/globals";
+
+body,
+input,
+button,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: $base-font-size;
+}
+body {
+    background: $background_body_color;
+}
+.todos-main-container {
+    min-width: 280px;
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 0 $offset_5x;
+}
+
+.hidden-container
+{
+    right: -1000px;
+    font-size: $todos-list-elem_text-font-size;
+    padding: $offset_5x $offset_half $offset_half  $offset_half;
+    text-decoration: none;
+    position: absolute;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+
+}
+
+.std-button{
+    font-size: inherit;
+    color: inherit;
+    height: $offset_5x;
+    cursor: pointer;
+    @include clear-button;
+}

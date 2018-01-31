@@ -1,0 +1,38 @@
+.todos-checkbox {
+  width: $todos-list_elem-checkbox-size;
+  height: $todos-list_elem-checkbox-size;
+  float: left;
+  margin-right: $offset_4x;
+  position: relative;
+}
+
+  .todos-checkbox_input {
+    opacity: 0;
+    position: absolute;
+    width: 105%;
+    height: 105%;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    margin: 0;
+
+  }
+
+  .todos-checkbox_input:checked ~ .todos-checkbox_visual {
+    background: url('../../../images/icons/completed.png') no-repeat;
+    background-position: center;
+    border: 1px solid $ready_border_color;
+    border-radius: 50px;
+  }
+
+
+  .todos-checkbox_visual {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: 1px solid $border_color;
+    border-radius: 50px;
+    transition : border 300ms ease-out;
+  }
+

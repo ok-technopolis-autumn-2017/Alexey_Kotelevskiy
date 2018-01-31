@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODOS</title>
+    <link rel="stylesheet" href="dist/styles/default.css">
+<script src="dist/scripts/bundle.js"></script>
+</head>
+
+
+<script type="text/html" id="todoItemTemplate">
+    <div class="todos-elem">
+        <div class="todos-checkbox">
+            <input type="checkbox" class="todos-checkbox_input js-todos-elem_check" aria-label="пометить как выполненное">
+            <div class="todos-checkbox_visual"></div>
+        </div>
+        <div class="todos-elem_text-container">
+            <textarea class="todos-elem_text js-todo-item_text" aria-label="Текст todo" ></textarea>
+        </div>
+        <button class="todos-elem_delete js-todos-elem_delete" aria-label="Удалить todo"></button>
+    </div>
+</script>
+
+
+<body>
+<h1 class="head-title">TODOS</h1>
+<div class="todos-main-container js-container">
+    <div class="todos-add-record">
+        <button class="todos-add-record_select-all js-todos-select-all" aria-label="Отметить все как выполненные">
+            <div class="todos-add_select-all_icon"></div>
+        </button>
+        <div class="todos-add_new-item-w">
+        <input type="text" class="todos-add-record_input js-todos-todo-input" placeholder="What needs to be done?" name="q"
+               aria-label="Поле добавления todo">
+        </div>
+    </div>
+    <div class="todos-list js-todos-list">
+
+
+    </div>
+    <div class="todos-action-bar">
+        <div class="todos-action-bar_items-count std-button js-todos-action-bar_items-count" aria-label="Количество не сделанных">3 items left</div>
+
+        <div class="todos-filters js-todos-action-bar_filter">
+            <button class="todos-filter_button __active std-button js-filter" aria-label="Фильтр все" data-filter="all">All</button>
+            <button class="todos-filter_button std-button js-filter" aria-label="Фильтр активные" data-filter="active">Active</button>
+            <button class="todos-filter_button std-button js-filter" aria-label="Фильтр завершенные" data-filter="completed">Completed</button>
+        </div>
+
+        <button class="todos-action-bar_clear-button std-button js-todos-action-bar_clear-button" aria-label="Удалить завершенные">Clear completed</button>
+    </div>
+</div>
+
+</body>
+</html>

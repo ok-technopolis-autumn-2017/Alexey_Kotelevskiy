@@ -1,0 +1,74 @@
+@import "../config/globals";
+
+.todos-elem {
+    position: relative;
+    padding: 0 $offset_3x 0 $offset_3x;
+    border-bottom: 1px solid $border_color;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.todos-elem.__ready
+{
+    .todos-elem_text {
+        color: $ready_text_color;
+        text-decoration: line-through;
+    }
+}
+
+.todos-elem.__hide
+{
+    display: none;
+}
+
+
+.todos-elem:hover {
+    background-color: $background_hover_element_color;
+    .todos-elem-checkbox {
+        border-color: $border_color;
+    }
+    .todos-elem_delete {
+        position: absolute;
+        display: block;
+        width: $todos-list-elem_delete-size;
+        height: $todos-list-elem_delete-size;
+        bottom: $offset_5x;
+        right: $offset_3x;
+        border: none;
+        background: url('../../../images/icons/close.png') no-repeat;
+    }
+}
+
+
+
+
+.todos-elem_delete {
+    display: none;
+    cursor: pointer;
+    outline: none;
+
+}
+
+
+.todos-elem_text-container {
+    padding-right: $offset_7x;
+    padding-top: $offset_4x;
+    flex-grow: 100;
+}
+
+.todos-elem_text {
+    text-decoration: none;
+    resize: none;
+    border: none;
+    width: 100%;
+    font-size: $todos-list-elem_text-font-size;
+    color: $not_ready_text_color;
+    outline: none;
+    background: none;
+    height: $todos-list_elem-checkbox-size;
+    vertical-align: middle;
+    overflow: hidden;
+    padding-top: 0;
+}
+

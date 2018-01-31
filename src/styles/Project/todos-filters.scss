@@ -1,0 +1,12 @@
+.todos-filters {
+  text-align: center;
+}
+
+.todos-filters .todos-filter_button {
+  padding: $offset ($offset_2x + 2px) $offset ($offset_2x + 2px);
+  text-align: center;
+}
+.todos-filters .todos-filter_button.__active {
+  border-radius: 4px;
+  border: 1px solid $border_color;
+}
