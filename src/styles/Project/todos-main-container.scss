@@ -1,7 +1,7 @@
 @import "../config/globals";
 
 $common_todos_container: 0 2px 4px rgba(0, 0, 0, .2);
-.container {
+.todos-main-container {
     background: $background_container_color;
     box-shadow: $common_todos_container;
     position: relative;
@@ -30,7 +30,7 @@ $common_todos_container: 0 2px 4px rgba(0, 0, 0, .2);
     }
 }
 
-    .container.__empty {
+    .todos-main-container.__empty {
         .todos-list {
             display: none;
         }

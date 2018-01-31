@@ -13,8 +13,8 @@ var templatesEngine = {
     todoItem: function (data) {
         var root = getTemplateRootNode('todoItemTemplate');
 
-        var markReady = root.querySelector('.js-todos-list-elem_check');
-        var removeAction = root.querySelector('.js-todos-list-elem_delete');
+        var markReady = root.querySelector('.js-todos-elem_check');
+        var removeAction = root.querySelector('.js-todos-elem_delete');
         var text = root.querySelector('.js-todo-item_text');
 
         if (data.text) {

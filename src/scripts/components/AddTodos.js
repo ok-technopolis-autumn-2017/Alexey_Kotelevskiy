@@ -37,6 +37,9 @@ addTodosConstructorPrototype._addItem = function () {
 
     if (todoInputValue.length !== 0) {
         this._todoInput.value = '';
+    } else
+    {
+        return;
     }
     return this.trigger('newTodo', {
         text: todoInputValue

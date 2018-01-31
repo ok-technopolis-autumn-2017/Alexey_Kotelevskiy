@@ -1,6 +1,6 @@
 @import "../config/globals";
 
-.todos-list_elem-container {
+.todos-elem {
     position: relative;
     padding: 0 $offset_3x 0 $offset_3x;
     border-bottom: 1px solid $border_color;
@@ -9,26 +9,26 @@
     justify-content: start;
 }
 
-.todos-list_elem-container.__ready
+.todos-elem.__ready
 {
-    .todos-list-elem_text {
+    .todos-elem_text {
         color: $ready_text_color;
         text-decoration: line-through;
     }
 }
 
-.todos-list_elem-container.__hide
+.todos-elem.__hide
 {
     display: none;
 }
 
 
-.todos-list_elem-container:hover {
+.todos-elem:hover {
     background-color: $background_hover_element_color;
-    .todos-list_elem-checkbox {
+    .todos-elem-checkbox {
         border-color: $border_color;
     }
-    .todos-list-elem_delete {
+    .todos-elem_delete {
         position: absolute;
         display: block;
         width: $todos-list-elem_delete-size;
@@ -43,7 +43,7 @@
 
 
 
-.todos-list-elem_delete {
+.todos-elem_delete {
     display: none;
     cursor: pointer;
     outline: none;
@@ -51,13 +51,13 @@
 }
 
 
-.todos-list-elem_text-container {
+.todos-elem_text-container {
     padding-right: $offset_7x;
     padding-top: $offset_4x;
     flex-grow: 100;
 }
 
-.todos-list-elem_text {
+.todos-elem_text {
     text-decoration: none;
     resize: none;
     border: none;

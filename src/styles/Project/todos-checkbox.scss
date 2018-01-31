@@ -1,4 +1,4 @@
-.todos-list_elem-checkbox {
+.todos-checkbox {
   width: $todos-list_elem-checkbox-size;
   height: $todos-list_elem-checkbox-size;
   float: left;
@@ -6,7 +6,7 @@
   position: relative;
 }
 
-  .todos-list-elem_check {
+  .todos-checkbox_input {
     opacity: 0;
     position: absolute;
     width: 105%;
@@ -18,7 +18,7 @@
 
   }
 
-  .todos-list-elem_check:checked + .todos-list-elem-checkbox_visual {
+  .todos-checkbox_input:checked ~ .todos-checkbox_visual {
     background: url('../../../images/icons/completed.png') no-repeat;
     background-position: center;
     border: 1px solid $ready_border_color;
@@ -26,7 +26,7 @@
   }
 
 
-  .todos-list-elem-checkbox_visual {
+  .todos-checkbox_visual {
     position: absolute;
     width: 100%;
     height: 100%;
